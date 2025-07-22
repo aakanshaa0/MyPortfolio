@@ -9,13 +9,13 @@ const Blogs = () => (
     </h2>
     <div className="grid md:grid-cols-2 gap-8">
       <BlogCard
-        image={blog1}
+        image={blog2}
         title="How to Avoid a $500 AWS Bill by Accident"
         description="Learn how to prevent surprise AWS bills by setting up billing alerts and budgets in just 5 minutes. Essential for any cloud developer."
-        link="https://medium.com/@aakansha0/identity-and-access-management-in-aws-6182c04864f6"
+        link="https://medium.com/@aakansha0/how-to-avoid-a-500-aws-bill-by-accident-4be584b13d88"
       />
       <BlogCard
-        image={blog2}
+        image={blog1}
         title="Identity and Access Management in AWS"
         description="Learn to securely manage cloud access with IAM users, groups, roles, and policies. Essential for controlling permissions at scale."
         link="https://medium.com/@aakansha0/identity-and-access-management-in-aws-6182c04864f6"
