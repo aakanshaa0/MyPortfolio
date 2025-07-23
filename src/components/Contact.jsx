@@ -64,9 +64,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6">
-            <h4 className="text-lg font-bold text-white mb-2">Availability</h4>
-            <span className="text-green-400 font-semibold">● Available for new projects</span>
-            <p className="text-gray-200 mt-2">I'm currently open to freelance opportunities and internship opportunities. Let's discuss how we can work together!</p>
+            <h4 className="text-lg font-bold text-white mb-2">What I am learning these days</h4>
+            <p className="text-gray-200 mt-2">Currently exploring cloud computing (AWS), Linux and building cool web applications.</p>
           </div>
           <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6">
             <h4 className="text-lg font-bold text-white mb-2">Fun Fact <span className="text-pink-300">🌸</span></h4>
