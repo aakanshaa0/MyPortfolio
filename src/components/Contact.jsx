@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="flex flex-col gap-2 text-pink-200">
               <a href="https://mail.google.com/mail/u/4/#inbox" target="_blank"><FiMail className="inline mr-2" /> aakanshapande0@gmail.com</a>
               <a href="https://github.com/aakanshaa0" target="_blank"><FiGithub className="inline mr-2" /> github.com/aakansha</a>
-              <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285/" target="_blank"><FiLinkedin className="inline mr-2" /> linkedin.com/in/aakansha</a>
+              <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285/" target="_blank"><FiLinkedin className="inline mr-2" />https://www.linkedin.com/in/aakansha-pande-666ba6285/</a>
             </div>
           </div>
           <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6">
