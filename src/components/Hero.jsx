@@ -93,9 +93,22 @@ const Hero = () => {
             A passionate developer always eager to learn, creating real web apps and solving challenges along the way. I love building beautiful, functional applications that make a difference.
           </p>
           <div className="flex gap-4 mt-6">
-            <a href="/src/assets/resume.pdf" download="Aakansha_Resume.pdf" className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition">
+            <button 
+              onClick={() => {
+                const fileId = '17o7YPjhR2bgOo1u68EMxm3aQS0RDRDDl';
+                const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+                
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.download = 'Aakansha_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition"
+            >
               <FiDownload className="text-lg" /> Resume
-            </a>
+            </button>
             <button 
               onClick={() => scrollToSection('contact')} 
               className="px-6 py-2 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-800 hover:text-white transition"
