@@ -93,7 +93,7 @@ const Hero = () => {
             A passionate developer always eager to learn, creating real web apps and solving challenges along the way. I love building beautiful, functional applications that make a difference.
           </p>
           <div className="flex gap-4 mt-6">
-            <a href="#" className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition">
+            <a href="/src/assets/resume.pdf" download="Aakansha_Resume.pdf" className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition">
               <FiDownload className="text-lg" /> Resume
             </a>
             <button 
