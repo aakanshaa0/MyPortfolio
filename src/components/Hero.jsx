@@ -1,11 +1,12 @@
 import profileImg from '../assets/pfp.jpg';
-import { FiDownload } from 'react-icons/fi';
+import { FiDownload, FiArrowRight } from 'react-icons/fi';
 import { useState, useEffect, useRef } from 'react';
 
 const titles = [
   'Backend Developer',
   'Frontend Developer',
-  'Full Stack Developer'
+  'Full Stack Developer',
+  'Cloud & DevOps Enthusiast'
 ];
 
 const TYPING_SPEED = 80;
@@ -65,10 +66,8 @@ const Hero = () => {
   }, [displayed]);
 
   return (
-    <section id="about" className="w-full flex flex-col items-center justify-center pt-32 pb-8 px-4 relative">
-      {/*Flower Background*/}
+    <section id="about" className="w-full flex flex-col items-center justify-center pt-36 pb-4 px-4 relative">
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
-        {/*Left Side*/}
         <div className="flex-1 flex flex-col items-start justify-center gap-2 md:gap-3">
           <h1 className="text-5xl md:text-5xl font-bold text-pink-400 leading-tight">
             Hi, I&apos;m Aakansha🌸
@@ -105,19 +104,21 @@ const Hero = () => {
                 link.click();
                 document.body.removeChild(link);
               }}
-              className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition"
+              className="flex items-center gap-2 px-6 py-2 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-800 hover:text-white transition"
             >
               <FiDownload className="text-lg" /> Resume
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className="px-6 py-2 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-800 hover:text-white transition"
+            <a 
+              href="https://cal.com/aakansha-pande-kc5mwn/30min?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2 bg-pink-500 text-white font-semibold rounded-lg shadow hover:bg-pink-600 transition"
             >
-              Get in Touch
-            </button>
+              Book a Call
+              <FiArrowRight />
+            </a>
           </div>
         </div>
-        {/*Right Side*/}
         <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
           <div className="relative flex items-center justify-center">
             <div className="rounded-full" style={{

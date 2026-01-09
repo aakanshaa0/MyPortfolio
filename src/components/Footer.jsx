@@ -1,7 +1,6 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaMediumM, FaHeart } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import { FiMail } from "react-icons/fi";
-import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,6 +11,7 @@ const Footer = () => {
           <a href="https://github.com/aakanshaa0" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-white transition text-2xl"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-white transition text-2xl"><GrLinkedin /></a>
           <a href="https://mail.google.com/mail/u/4/#inbox" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-white transition text-2xl"><FiMail /></a>
+          <a href="https://medium.com/@aakansha0" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-white transition text-2xl"><FaMediumM /></a>
         </div>
         <div className="flex flex-row items-center gap-2 text-lg font-semibold text-white">
           <span>Made with</span>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { GiLotusFlower } from 'react-icons/gi';
 
-const NAVBAR_HEIGHT = 72; // px, adjust if your navbar height changes
+const NAVBAR_HEIGHT = 72;
 
 const FlowerBackground = () => {
   const flowers = Array.from({ length: 90 }).map((_, i) => {
@@ -39,7 +39,6 @@ const FlowerBackground = () => {
       left = `${Math.random() * 100}%`;
       top = `${Math.random() * 100}%`;
     }
-    // Offset top by navbar height so no flowers appear behind navbar
     let topPx = top.endsWith('%') ? `calc(${top} + ${NAVBAR_HEIGHT}px)` : `${parseFloat(top) + NAVBAR_HEIGHT}px`;
     return {
       id: i,
@@ -86,7 +85,7 @@ const FlowerBackground = () => {
             style={{ 
               width: '100%', 
               height: '100%', 
-              color: '#f472b6', // pink center
+              color: '#f472b6',
               filter: 'drop-shadow(0 0 1px #ffe4f3) drop-shadow(0 0 2px #f9a8d4)'
             }} 
           />
