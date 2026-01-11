@@ -6,7 +6,7 @@ const titles = [
   'Backend Developer',
   'Frontend Developer',
   'Full Stack Developer',
-  'Cloud & DevOps Enthusiast'
+  'Cloud'
 ];
 
 const TYPING_SPEED = 80;
