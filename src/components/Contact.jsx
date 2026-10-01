@@ -1,5 +1,5 @@
 import { FiMail, FiMessageCircle, FiCalendar, FiArrowRight } from 'react-icons/fi';
-import { FaGithub, FaMediumM } from 'react-icons/fa';
+import { FaGithub, FaMediumM, FaSpotify } from 'react-icons/fa';
 import { GrLinkedin } from 'react-icons/gr';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
@@ -55,17 +55,30 @@ const Contact = () => {
             <a href="https://github.com/aakanshaa0" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-400 text-2xl"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-400 text-2xl"><GrLinkedin /></a>
             <a href="https://medium.com/@aakansha0" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-400 text-2xl"><FaMediumM /></a>
+            <a href="https://open.spotify.com/user/31pgcacitukvob6lq4s7b4lmjzka?si=c08ef87904f740ce&nd=1&dlsi=03eba73ad5024c1e" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-400 text-2xl"><FaSpotify /></a>
           </div>
         </div>
 
         <div className="flex flex-col gap-6">
+          <div>
+            <iframe 
+              style={{borderRadius: '12px'}} 
+              src="https://open.spotify.com/embed/track/0RiRZpuVRbi7oqRdSMwhQY?utm_source=generator&theme=0" 
+              width="100%" 
+              height="152" 
+              frameBorder="0" 
+              allowFullScreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+            ></iframe>
+          </div>
           <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6 flex flex-col">
             <div>
               <h4 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full mx-1"></span>
                 Let's Work Together
               </h4>
-              <p className="text-gray-200 mt-2">Have an idea or a problem to solve? I'm open to building impactful products together.</p>
+              <p className="text-gray-200 mt-2">Have an idea or a problem to solve? I'm open to building impactful products together and exploring new opportunities.</p>
             </div>
             <div className="flex flex-row gap-3 mt-4 justify-start">
               <a href="mailto:aakanshapande0@gmail.com" className="flex items-center justify-center gap-2 px-3.5 py-1.5 border-2 border-pink-400 text-pink-300 font-semibold rounded-lg hover:bg-pink-400 hover:text-white transition">
@@ -79,17 +92,14 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6">
-            <h4 className="text-lg font-bold text-white mb-2">Get in Touch</h4>
+            <h4 className="text-lg font-bold text-white mb-2">Socials</h4>
             <div className="flex flex-col gap-2 text-pink-200">
-              <a href="mailto:aakanshapande0@gmail.com"><FiMail className="inline mr-2" /> aakanshapande0@gmail.com</a>
               <a href="https://github.com/aakanshaa0" target="_blank"><FaGithub className="inline mr-2" /> github.com/aakanshaa0</a>
-              <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285/" target="_blank"><GrLinkedin className="inline mr-2" />linkedin.com/in/aakansha-pande-666ba6285</a>
+              <a href="https://www.linkedin.com/in/aakansha-pande-666ba6285/" target="_blank"><GrLinkedin className="inline mr-2" />linkedin.com/in/aakansha-pande</a>
               <a href="https://medium.com/@aakansha0" target="_blank"><FaMediumM className="inline mr-2" />medium.com/@aakansha0</a>
+              <a href="https://open.spotify.com/user/31pgcacitukvob6lq4s7b4lmjzka" target="_blank"><FaSpotify className="inline mr-2" />spotify.com/aakansha</a>
+              <a href="mailto:aakanshapande0@gmail.com"><FiMail className="inline mr-2" /> aakanshapande0@gmail.com</a>
             </div>
-          </div>
-          <div className="bg-[#1b1e36] border-2 border-[#393053] rounded-xl p-6">
-            <h4 className="text-lg font-bold text-white mb-2">Fun Fact <span className="text-pink-300">🌸</span></h4>
-            <p className="text-gray-200">When I'm not coding, you can find me exploring new technologies, reading tech blogs, or enjoying a good cup of coffee while brainstorming my next project idea.</p>
           </div>
         </div>
       </div>

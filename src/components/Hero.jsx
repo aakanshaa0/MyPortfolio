@@ -1,12 +1,12 @@
 import profileImg from '../assets/pfp.jpg';
-import { FiDownload, FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
 import { useState, useEffect, useRef } from 'react';
 
 const titles = [
-  'Backend Developer',
-  'Frontend Developer',
   'Full Stack Developer',
-  'Cloud'
+  'AWS Certified Cloud Practitioner',
+  'Backend Developer',
+  'Problem Solver'
 ];
 
 const TYPING_SPEED = 80;
@@ -66,7 +66,7 @@ const Hero = () => {
   }, [displayed]);
 
   return (
-    <section id="about" className="w-full flex flex-col items-center justify-center pt-36 pb-4 px-4 relative">
+    <section id="about" className="w-full flex flex-col items-center justify-center pt-40 pb-12 px-4 relative">
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
         <div className="flex-1 flex flex-col items-start justify-center gap-2 md:gap-3">
           <h1 className="text-5xl md:text-5xl font-bold text-pink-400 leading-tight">
@@ -89,24 +89,14 @@ const Hero = () => {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-200 max-w-xl mt-2">
-            A passionate developer always eager to learn, creating real web apps and solving challenges along the way. I love building beautiful, functional applications that make a difference.
+            I build full-stack web applications and love solving real-world problems with code. When I'm not debugging, you'll find me exploring cloud technologies, experimenting with AI, or diving into a good tech blog.
           </p>
           <div className="flex gap-4 mt-6">
             <button 
-              onClick={() => {
-                const fileId = '17o7YPjhR2bgOo1u68EMxm3aQS0RDRDDl';
-                const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-                
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.download = 'Aakansha_Resume.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
-              className="flex items-center gap-2 px-6 py-2 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-800 hover:text-white transition"
+              onClick={() => scrollToSection('contact')}
+              className="flex items-center gap-2 px-6 py-2 border-2 border-pink-400 text-pink-400 font-semibold rounded-lg hover:bg-pink-400 hover:text-white transition"
             >
-              <FiDownload className="text-lg" /> Resume
+              Get in Touch
             </button>
             <a 
               href="https://cal.com/aakansha-pande-kc5mwn/30min?overlayCalendar=true"
@@ -123,8 +113,8 @@ const Hero = () => {
           <div className="relative flex items-center justify-center">
             <div className="rounded-full" style={{
               padding: '8px',
-              background: 'rgba(255,255,255,0.18)',
-              boxShadow: '0 0 0 9px rgba(255,255,255,0.18), 0 6px 32px 0 rgba(0,0,0,0.10)'
+              background: 'rgba(255, 182, 193, 0.15)',
+              boxShadow: '0 0 0 9px rgba(255, 182, 193, 0.12), 0 6px 32px 0 rgba(236, 72, 153, 0.15)'
             }}>
               <img src={profileImg} alt="Aakansha" className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover bg-white" />
             </div>

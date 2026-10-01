@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import PromoAi from '../assets/PromoAi.jpg';
 import Vestra from '../assets/Vestra.png';
+import FitnessTrainer from '../assets/FitnessTrainer.png';
+import LegalLens from '../assets/LegalLens.png';
+import Medicare from '../assets/Medicare.png';
 import Devshaala from '../assets/Devshaala.png';
-import FitnesssTrainer from '../assets/FitnessTrainer.png';
+import PromoAi from '../assets/PromoAi.jpg';
 import { FiChevronDown, FiExternalLink } from 'react-icons/fi';
 
 const Projects = () => {
@@ -16,38 +18,54 @@ const Projects = () => {
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <ProjectCard
-          image={FitnesssTrainer}
-          title="FitnessTrainer"
+          image={FitnessTrainer}
+          title="FitAI"
           subtitle="AI Fitness Trainer"
-          description="An AI-powered fitness app that generates personalized workout and diet plans based on user goals and preferences."
-          live="https://fitaii.vercel.app"
-          github="https://github.com/aakanshaa0/FitnessTrainer.git"
+          description="AI-powered fitness application that generates personalized workout plans and diet recommendations based on individual fitness goals, body metrics, and preferences."
+          live="https://fitaii.vercel.app/"
+          github="https://github.com/aakanshaa0/FitnessTrainer"
         />
         <ProjectCard
-          image={Vestra}
-          title="Vestra"
-          subtitle="E-commerce Website"
-          description="A user-friendly e-commerce website for seamless online shopping."
-          live="https://vestraa.vercel.app"
-          github="https://github.com/aakanshaa0/ecommerce-website.git"
+          image={Medicare}
+          title="Medicare"
+          subtitle="Hospital Management System"
+          description="Comprehensive hospital management platform built with Java Spring Boot, React, and PostgreSQL. Features JWT authentication, OAuth2 login, and RBAC for Admin, Doctor, and Patient workflows."
+          live="#"
+          github="https://github.com/aakanshaa0/Medicare"
         />
         {showAll && (
           <>
             <ProjectCard
+              image={Vestra}
+              title="Vestra"
+              subtitle="E-commerce Platform"
+              description="Full-featured e-commerce web application built with MERN stack. Includes Stripe payment gateway integration, Cloudinary for media management, JWT authentication, and Docker containerization for seamless deployment."
+              live="https://vestraa.vercel.app"
+              github="https://github.com/aakanshaa0/ecommerce-website.git"
+            />
+            <ProjectCard
+              image={LegalLens}
+              title="LegalLens"
+              subtitle="Document Analysis Platform"
+              description="Document intelligence platform using React, TypeScript, and Node.js. Supports PDF, DOCX, TXT, CSV, and JSON with multi-document summarization and context-aware Q&A powered by LangChain and Google Gemini."
+              live="#"
+              github="https://github.com/aakanshaa0/LegalLens"
+            />
+            <ProjectCard
               image={PromoAi}
               title="PromoAI"
-              subtitle="Your promotion buddy"
-              description="Helps you generate promotional posts for various platforms using AI."
-              live="#"
-              github="https://github.com/aakanshaa0/PromoAI.git"
+              subtitle="AI Content Generator"
+              description="AI-driven promotional content generator that creates engaging marketing posts and social media content for various platforms using natural language processing and generative AI models."
+              live="https://promoaii.vercel.app/"
+              github="https://github.com/aakanshaa0/PromoAI"
             />
             <ProjectCard
               image={Devshaala}
               title="DevShaala"
               subtitle="Course Management Platform"
-              description="An e-learning platform where instructors can create courses and students can enroll in them."
+              description="Online learning management system where instructors can create and publish courses, and students can enroll, track progress, and access educational content with an interactive dashboard."
               live="#"
-              github="https://github.com/aakanshaa0/DevShaala.git"
+              github="https://github.com/aakanshaa0/DevShaala"
             />
           </>
         )}

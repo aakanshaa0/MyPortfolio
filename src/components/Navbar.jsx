@@ -29,7 +29,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'experience', 'projects', 'blogs', 'contact'];
+      const sections = ['about', 'skills', 'experience', 'projects', 'certifications', 'blogs', 'contact'];
       const scrollPosition = window.scrollY + 150;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -134,6 +134,15 @@ const Navbar = () => {
         </li>
         <li className="relative">
           <button 
+            ref={(el) => menuItemsRef.current['certifications'] = el}
+            onClick={() => scrollToSection('certifications')}
+            className={`pb-1 transition-colors duration-500 ease-in-out ${activeSection === 'certifications' ? 'text-pink-400' : 'hover:text-pink-400'}`}
+          >
+            Achievements
+          </button>
+        </li>
+        <li className="relative">
+          <button 
             ref={(el) => menuItemsRef.current['blogs'] = el}
             onClick={() => scrollToSection('blogs')}
             className={`pb-1 transition-colors duration-500 ease-in-out ${activeSection === 'blogs' ? 'text-pink-400' : 'hover:text-pink-400'}`}
@@ -164,6 +173,9 @@ const Navbar = () => {
           </li>
           <li>
             <button onClick={() => scrollToSection('projects')} className={`w-full text-left pb-1 transition-all duration-300 ${activeSection === 'projects' ? 'border-b-2 border-pink-400' : 'hover:text-pink-400'}`}>Projects</button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection('certifications')} className={`w-full text-left pb-1 transition-all duration-300 ${activeSection === 'certifications' ? 'border-b-2 border-pink-400' : 'hover:text-pink-400'}`}>Achievements</button>
           </li>
           <li>
             <button onClick={() => scrollToSection('blogs')} className={`w-full text-left pb-1 transition-all duration-300 ${activeSection === 'blogs' ? 'border-b-2 border-pink-400' : 'hover:text-pink-400'}`}>Blogs</button>

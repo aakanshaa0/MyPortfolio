@@ -10,7 +10,7 @@ const Experience = () => (
       <div className="w-full">
       <ExperienceCard
           title="Full Stack Developer Intern"
-          company="Hakxcore.io"
+          company="Hakxcore"
           logo={companyLogo}
           duration="June 2025 - September 2025"
           location="Remote"
